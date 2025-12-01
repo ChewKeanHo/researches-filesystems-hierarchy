@@ -1,0 +1,80 @@
+# `/bin`
+
+[![banner](/.internals/trademarks/animated-banner_1200x100.svg)](#)
+
+This is the base directory housing critical programs and applications
+for an operating system to function properly without any mounting
+(e.g. `/usr` is not mounted or absent). This means it can operate in
+`Single-User` mode in BSD realm.
+
+The goal is to have minimum possible critical programs enough for
+basic functionalities for performing baseline operations like mounting
+`/usr` directory for functionalities extensions or rescue recovery.
+
+In certain UNIX-like operating system design, this directory can be a
+symbolic link to `/usr/bin` (`System V.4`, `Debian`, etc).
+
+Generally, you **SHOULD ONLY** place programs that are very critical at
+early booting stage without conflicting with existing POSIX compliant
+programs.
+
+This directory **MUST NOT** have any sub-directory.
+
+
+
+
+## Naming Conventions
+
+[![banner](/.internals/trademarks/animated-banner_1200x100.svg)](#)
+
+All POSIX compliant registered programs. Among them are:
+
+```
+[        - program to test a condition (used in shell scripting).
+cat      - program to concatenate files to standard output.
+chgrp    - program to change file group ownership.
+chmod    - program to change file access permissions.
+chown    - program to change file ownership and group.
+cp       - program to copy files and directories utility.
+date     - program to print and set datetime.
+dd       - program to duplicate raw input/output.
+df       - program to report filesystem and disk space capacity.
+dmesg    - program to print or control kernel message buffers.
+echo     - program to display content.
+false    - program to do nothing or unnecessfully.
+hostname - program to show OS's hostname.
+kill     - program to kill a process.
+ln       - program to make link in filesystem.
+login    - program to login.
+ls       - program to list item in filesystem.
+mkdir    - program to make directory.
+mknod    - program to make block or character special files.
+more     - program to page through text.
+mount    - program to mount a filesystem.
+mv       - program to move things in filesystem.
+ps       - program to report process status.
+pwd      - program to report current directory location.
+rm       - program to remove item in filesystem.
+rmdir    - program to remove empty directory in filesystem.
+sed      - program to stream and edit files in filesystem.
+sh       - program to execute POSIX compatible shell.
+stty     - program to configure terminal settings.
+su       - program to change runtime user ID.
+sync     - program to flush buffers in filesystem.
+test     - program to test a condition.
+true     - program to do nothing successfully.
+umount   - program to unmount a filesystem.
+uname    - program to report OS system information.
+```
+
+Optional programs (for more robust critical functionalities) are:
+
+```
+tar      - program to archive a directory.
+cpio     - program to archive a directory.
+gzip     - program by GNU for compression.
+gunzip   - program by GNU for de-compression.
+zcat     - program by GNU for de-compression.
+netstat  - program to report network statistics.
+ping     - program to perform ICMP network testing.
+```
