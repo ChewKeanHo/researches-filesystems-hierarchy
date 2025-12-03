@@ -1,4 +1,4 @@
-# Filesystems Hierarchy (FHS) Layouts Research Project
+# Filesystem Hierarchy Standard (FHS) Layouts Research Project
 
 [![banner](/.internals/trademarks/animated-banner_1200x100.svg)](#)
 
@@ -14,7 +14,7 @@ from various design boards into a single reference points.
 > back to this project. **IN NO WAY** this project is forcing anyone
 > to adhere opinions.
 >
-> **Fanatism destroys**. Please act responsbily and sensibly.
+> **Fanaticism destroys**. Please act responsbily and sensibly.
 
 
 
@@ -33,7 +33,7 @@ This research project ultimate goals are for:
    communications sake.
 2. **Solid Design References For Project Structuring** - something to refer
    (not a rule) when designing a project directory layout.
-4. **Project Repository Hygines** - ensures new products are not polluting
+4. **Project Repository Hygiene** - ensures new products are not polluting
    a project's repository with all the configuration files and etc.
 
 
