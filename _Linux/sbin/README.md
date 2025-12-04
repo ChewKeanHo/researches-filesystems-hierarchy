@@ -1,0 +1,69 @@
+# `/sbin`
+
+[![banner](/.internals/trademarks/animated-banner_1200x100.svg)](#)
+
+This is the base directory for housing system administrators (sysadmins) only
+critical programs and applications of an operating system (OS) to function
+properly and minimally without any mounting (e.g. `/usr` is not mounted or
+absent). This means it can operate in `Emergency Mode`.
+
+The goal is to have minimally sufficient programs enough for basic
+functionalities to perfrom critical tasks like mounting `/usr` UNIX System
+Resources directory for functionalities extension, performing self-rescue, or
+straight up operational in resources constraint environment such as but not
+limited to OpenWRT embedded router.
+
+All programs and applications here are **ONLY** available to sysadmins
+(users in `wheel` group) and root account.
+
+In a lot of Linux OSes like Oracle's Solaris (first to transform back in 2012)
+Red Hat's Fedora (second to transform back in 2023) an Debian (started back in
+2022), due to `/usr` is always being mounted and hardware are no longer seeing
+performance differences between `/` and `/usr`, this directory is being
+symbolic linked to `/usr/sbin` instead; unifying both directories. This reduces
+the separation complexities while simplifying the package managements to target
+`/usr/sbin` only.
+
+Generally, in the case of `/sbin` being symbolic linked to `/usr/sbin`, you
+**SHOULD NOT** place anything here and instead use `/usr/sbin` exclusively.
+Otherwise, in edge and rare cases, you **SHOULD ONLY** place programs that
+are very critical at early booting stage without conflicting with existing
+POSIX compliant programs.
+
+This directory **MUST NOT** have any sub-directory.
+
+
+
+
+## Naming Conventions
+
+[![banner](/.internals/trademarks/animated-banner_1200x100.svg)](#)
+
+All programs here are registered programs that are usable across all UNIX
+and UNIX-like OSes (POSIX Compliant). Among them are:
+
+```
+shutdown - program to shutdown the operating system.
+```
+
+Optional programs (for robust functionalities) are:
+
+```
+fastboot - program to reboot the OS without checking the disk.
+fasthalt - program to stop the OS without checking the disk.
+fdisk    - program to configure partition table.
+fsck     - program to check and repair a disk and partition.
+fsck.*   - program(s) to check and repair specific disk and partition.
+getty    - program to perform terminal robust configurations.
+halt     - program to stop the OS.
+ifconfig - program to configure a network interface.
+init     - program to initialize the OS.
+mkfs     - program to make filesystem format to a partition.
+mkfs.*   - program to make specific filesystem format to a partition.
+mkswap   - program to setup a swap area.
+reboot   - program to reboot the OS.
+route    - program to configure IP routing table.
+swapon   - program to enable paging and swapping.
+swapoff  - program to disable paging and swapping.
+update   - program to flush filesystem periodically (daemon).
+```
