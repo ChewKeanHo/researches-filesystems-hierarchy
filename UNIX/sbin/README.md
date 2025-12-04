@@ -2,22 +2,33 @@
 
 [![banner](/.internals/trademarks/animated-banner_1200x100.svg)](#)
 
-This is the base directory housing critical system administrators'
-programs and applications for an operating system to function properly
-without any mounting (e.g. when `/usr` is not mounted). This means it
-can operate in `Single-User` mode.
+This is the base directory for housing system administrators (sysadmins)
+only critical programs and applications of an operating system (OS) to
+function properly and minimally without any mounting (e.g. `/usr` is not
+mounted or absent). This means it can operate in `Single-User` mode in
+BSD realm or `Emergency Mode` in Linux realm.
 
-Unlike `/bin`, only sysadmin and root users can access these programs.
+The goal is to have minimally sufficient programs enough for basic
+functionalities to perfrom critical tasks like mounting `/usr`
+UNIX System Resources directory for functionalities extension, performing
+self-rescue, or straight up operational in resources constraint environment
+such as but not limited to OpenWRT embedded router.
 
-The goal is to have minimum possible programs for the sysadmins to operate
-including functionalities extension by mounting the `/usr` directory.
+All programs and applications here are **ONLY** available to sysadmins
+(users in `wheel` group) and root account.
 
-In certain UNIX-like operating system design, this directory can be a
-symbolic link to `/usr/sbin` (System V.4, Debian, etc).
+In some UNIX-like OSes like Oracle's Solaris (first to transform back in 2012)
+and Red Hat's Fedora (second to transform back in 2023), due to `/usr`
+is always being mounted and hardware are no longer seeing performance
+differences between `/` and `/usr`, this directory is being symbolic linked
+to `/usr/sbin` instead; unifying both directories. This reduces the separation
+complexities while simplifying the package managements to target `/usr/sbin`
+only.
 
-Generally, you **SHOULD ONLY** place administrative programs that are
-very critical early on without conflicting with existing POSIX compliant
-programs.
+Generally, you **SHOULD ONLY** place programs that are very critical at
+early booting stage without conflicting with existing POSIX compliant
+programs. In the case of `/sbin` being symbolic linked to `/usr/sbin`, you
+**SHOULD NOT** place anything here and instead use `/usr/sbin` exclusively.
 
 This directory **MUST NOT** have any sub-directory.
 

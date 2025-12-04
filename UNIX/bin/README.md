@@ -2,21 +2,31 @@
 
 [![banner](/.internals/trademarks/animated-banner_1200x100.svg)](#)
 
-This is the base directory housing critical programs and applications
-for an operating system to function properly without any mounting
-(e.g. `/usr` is not mounted or absent). This means it can operate in
-`Single-User` mode in BSD realm.
+This is the base directory for housing critical programs and applications
+of an operating system (OS) to function properly and minimally without any
+mounting (e.g. `/usr` is not mounted or absent). This means it can operate
+in `Single-User` mode in BSD realm or `Emergency Mode` in Linux realm.
 
-The goal is to have minimum possible critical programs enough for
-basic functionalities for performing baseline operations like mounting
-`/usr` directory for functionalities extensions or rescue recovery.
+The goal is to have minimally sufficient programs enough for basic
+functionalities to perfrom critical tasks like mounting `/usr`
+UNIX System Resources directory for functionalities extension, performing
+self-rescue, or straight up operational in resources constraint environment
+such as but not limited to OpenWRT embedded router.
 
-In certain UNIX-like operating system design, this directory can be a
-symbolic link to `/usr/bin` (`System V.4`, `Debian`, etc).
+All programs and applications here are available to all users.
+
+In some UNIX-like OSes like Oracle's Solaris (first to transform back in 2012)
+and Red Hat's Fedora (second to transform back in 2023), due to `/usr`
+is always being mounted and hardware are no longer seeing performance
+differences between `/` and `/usr`, this directory is being symbolic linked
+to `/usr/bin` instead; unifying both directories. This reduces the separation
+complexities while simplifying the package managements to target `/usr/bin`
+only.
 
 Generally, you **SHOULD ONLY** place programs that are very critical at
 early booting stage without conflicting with existing POSIX compliant
-programs.
+programs. In the case of `/bin` being symbolic linked to `/usr/bin`, you
+**SHOULD NOT** place anything here and instead use `/usr/bin` exclusively.
 
 This directory **MUST NOT** have any sub-directory.
 

@@ -58,6 +58,10 @@ specifications to match the outputs:
 11. SystemD Breaking UNIX FHS Convention - https://github.com/systemd/systemd/issues/38563#issuecomment-3242736658
 12. Devuan Community - https://www.devuan.org/
 13. Void Linux Community - https://voidlinux.org/
+14. "The Case for the `/usr` Merge" by SystemD - https://systemd.io/THE_CASE_FOR_THE_USR_MERGE/
+15. Oracle's User Environment Feature Changes - https://docs.oracle.com/cd/E23824_01/html/E24456/userenv-1.html
+16. Debian's USR Merge - https://wiki.debian.org/UsrMerge
+17. Fedora's Changes/Unify `bin` and `sbin` - https://fedoraproject.org/wiki/Changes/Unify_bin_and_sbin
 
 
 
