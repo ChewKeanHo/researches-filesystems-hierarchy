@@ -28,8 +28,6 @@ Otherwise, in edge and rare cases, you **SHOULD ONLY** place programs that
 are very critical at early booting stage without conflicting with existing
 POSIX compliant programs.
 
-This directory **MUST NOT** have any sub-directory.
-
 
 
 

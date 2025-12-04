@@ -5,8 +5,7 @@
 This is the base directory for only critical libraries used by
 critical programs and applications of an operating system (OS) to
 function properly and minimally without any mounting (e.g. `/usr` is not
-mounted or absent). This means it can operate in `Single-User` mode in
-BSD realm or `Emergency Mode` in Linux realm.
+mounted or absent). This means it can operate in `Single-User` mode.
 
 The goal is to have minimally sufficient libraries to perform critical
 tasks like mounting `/usr` UNIX System Resources directory for
@@ -22,7 +21,7 @@ is always being mounted and hardware are no longer seeing performance
 differences between `/` and `/usr`, this directory is being symbolic linked
 to `/usr/lib` instead; unifying both directories. This reduces the separation
 complexities while simplifying the package managements to target `/usr/lib`
-only.
+only. **FreeBSD however, have not seen to perform such implementation yet.**
 
 Generally, you **SHOULD ONLY** place programs that are very critical at
 early booting stage without conflicting with existing POSIX compliant
@@ -64,11 +63,4 @@ Here are the examples with and without using `trademark` directory:
     kernel8.ko
     kernel8_freebsd-amd64.ko
     ...
-```
-
-Optional layouts introduced by some specific operating systems are:
-
-```
-# GNU+Linux
-modules  - houses Linux kernel modules' library and configuration files.
 ```

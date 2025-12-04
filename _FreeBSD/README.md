@@ -1,14 +1,9 @@
-# UNIX Filesystem Hierarchy Standard
+#  Free Berkeley Software Distribution (FreeBSD) Filesystem Hierarchy Standard
 
 [![banner](/.internals/trademarks/animated-banner_1200x100.svg)](#)
 
-This is UNIX specific Filesystem Hierarchy Standard (FHS) covering all
-compatible operating systems (OS) such as but not limited to:
-
-* [`Berkeley Software Distribution` (BSD)](/_FreeBSD)
-* [`GNU's Not Unix!` (GNU) + Linux](/_Linux)
-
-For OS specific filesystems, please review their specific filesystems.
+This is FreeBSD-specific Filesystem Hierarchy Standard (FHS) for FreeBSD
+operating system (OS).
 
 
 
@@ -17,8 +12,7 @@ For OS specific filesystems, please review their specific filesystems.
 
 [![banner](/.internals/trademarks/animated-banner_1200x100.svg)](#)
 
-UNIX operating systems generally go through 4 stages of functionalities
-extensions:
+FreeBSD OS generally go through 4 stages of functionalities extensions:
 
 1. **Critical & Minimal** - focuses on booting up the OS upto the minimal
    operational level. This only uses tools from the Root (`/`) directory
@@ -50,7 +44,7 @@ extensions:
 [![banner](/.internals/trademarks/animated-banner_1200x100.svg)](#)
 
 The root directory is the very foundational and critical directory
-represented by `/` in UNIX OS. When root combines with [Common](/Common)
+represented by `/` in FreeBSD OS. When root combines with [Common](/Common)
 filesystem hierarchy, you get a list of basic functional directories such as:
 
 ```
@@ -65,36 +59,25 @@ The root directory also has other system directories that provides
 various system roles:
 
 ```
-/boot      - OS critical bootloading component.
-/dev       - OS mapped IO device nodes for hardware interactions.
-/home      - OS users' home directories (optional).
-/media     - OS mounted removable media like CDs, floppy disks, and portable
-             disks.
-/mnt       - temporary mountpoint for sysadmins and root users to troubleshoot
-             mountable nodes and devices.
-/root      - OS root account's home directory (optional).
-/usr       - OS UNIX Systems Resources for extended functionalities.
-/var       - OS variable data directory like log, data, and spool files.
-```
-
-Then, the specific UNIX distribution (e.g. `FreeBSD`, `Debian`, etc) can
-specify its specific directories such as but not limited to:
-
-```
-FreeBSD
--------
-/compat    - Files supporting binary compatibilities with other operating
-             systems like linux (`/compat/linux`).
-/entropy   - Provides initial state to random number generator (RNG).
-/net       - Automounted Network Area Storage (NAS) share mounting.
-/rescue    - Statically linked programs for emergency recovery.
-
-
-GNU+Linux
----------
-/proc      - OS process files (optional).
-/sys       - OS sysfs (optional). On Linux it's kernel info. On BSD, it's
-             a symlinked to '/usr/src/sys'.
+/boot        - OS critical bootloading component.
+/compat      - Files supporting binary compatibilities with other operating
+               systems like linux (`/compat/linux`).
+/dev         - OS mapped IO device nodes for hardware interactions.
+/entropy     - Provides initial state to random number generator (RNG).
+/home        - OS users' home directories (optional).
+/libexec     - OS critical system files not importable as libraries but not
+               suitable for any users to call upon.
+/media       - OS mounted removable media like CDs, floppy disks, and portable
+               disks.
+/mnt         - temporary mountpoint for sysadmins and root users to troubleshoot
+               mountable nodes and devices.
+/net         - Automounted Network Area Storage (NAS) share mounting.
+/nonexistent - Home directory for users who do not need an actual '/home'
+               directory (optional).
+/rescue      - Statically linked programs for emergency recovery.
+/root        - OS root account's home directory (optional).
+/usr         - OS UNIX Systems Resources for extended functionalities.
+/var         - OS variable data directory like log, data, and spool files.
 ```
 
 
@@ -106,8 +89,7 @@ GNU+Linux
 
 The primary objective of this layer is to boot the OS critical component
 up and running with minimum resources and be functionally operational.
-This is known as `Single User` operating mode in FreeBSD or `Emergency Mode`
-in many Linux-based OSes.
+This is known as `Single User` operating mode.
 
 There are 2 possibilities:
 
@@ -117,5 +99,5 @@ There are 2 possibilities:
   the `/usr` directory (common computing deployment).
 
 You can explore each root layer's base directories in details. Once
-done, head over to [`/usr`](/UNIX/usr) directory which is the second
+done, head over to [`/usr`](/_FreeBSD/usr) directory which is the second
 layer for functionalities' expansions.

@@ -62,6 +62,11 @@ specifications to match the outputs:
 15. Oracle's User Environment Feature Changes - https://docs.oracle.com/cd/E23824_01/html/E24456/userenv-1.html
 16. Debian's USR Merge - https://wiki.debian.org/UsrMerge
 17. Fedora's Changes/Unify `bin` and `sbin` - https://fedoraproject.org/wiki/Changes/Unify_bin_and_sbin
+18. Flatpak Package Management - https://docs.flatpak.org/en/latest/introduction.html
+19. Red Hat 7 FHS - https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/7/html/storage_administration_guide/ch-filesystem
+20. UAPI Linux FHS - https://uapi-group.org/specifications/specs/linux_file_system_hierarchy/
+21. Freedesktop SystemD FHS - https://www.freedesktop.org/software/systemd/man/latest/file-hierarchy.html
+22. FreeBSD `hier` Default FHS - https://man.freebsd.org/cgi/man.cgi?hier(7)
 
 
 
