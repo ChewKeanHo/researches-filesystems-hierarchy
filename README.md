@@ -53,6 +53,11 @@ specifications to match the outputs:
 6. OpenWRT Filesystem - https://openwrt.org/docs/guide-user/storage/filesystems-and-partitions
 7. Font Directory - https://forums.freebsd.org/threads/whats-the-proper-way-to-install-truetype-fonts.79999/
 8. KDE Font Directory - https://bugs.kde.org/show_bug.cgi?id=442976
+9. Joe Brockmeier, 2025 - https://lwn.net/Articles/1041316/
+10. SystemD Filesystems Standard - https://www.freedesktop.org/software/systemd/man/latest/file-hierarchy.html
+11. SystemD Breaking UNIX FHS Convention - https://github.com/systemd/systemd/issues/38563#issuecomment-3242736658
+12. Devuan Community - https://www.devuan.org/
+13. Void Linux Community - https://voidlinux.org/
 
 
 
