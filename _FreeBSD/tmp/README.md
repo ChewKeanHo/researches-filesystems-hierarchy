@@ -5,10 +5,6 @@
 This directory houses all operating system's (OS) temporary files and directory.
 On many OSes design, this directory gets cleared and cleaned on boot up.
 
-On some UNIX-like OSes like Red Hat Linux and Fedora, this directory is replaced
-as `/usr/tmp` directory linked to `/var/tmp` directory instead. In short, if
-`/tmp` is unavailable, look for those 2 directories.
-
 Programs **SHOULD NOT** assume any file and directory here and **SHOULD** always
 practice safe-querying before use.
 
