@@ -17,8 +17,8 @@ query before use.
 
 [![banner](/.internals/trademarks/animated-banner_1200x100.svg)](#)
 
-When this directory combines with [Common](/Common) directories structure, it
-houses user-only specific filesystems on top of the operating system (OS),
+When this directory combines with [Common](/Common) directories structure,
+it houses user-only specific filesystems on top of the operating system (OS),
 personalized it just for this user. The combination happens inside a `.local`
 sub-directory of this directory. The commonly seen structures would be:
 
