@@ -8,7 +8,7 @@ mounting (e.g. `/usr` is not mounted or absent). This means it can operate
 in `Emergency Mode`.
 
 The goal is to have minimally sufficient programs enough for basic
-functionalities to perfrom critical tasks like mounting `/usr`
+functionalities to perform critical tasks like mounting `/usr`
 UNIX System Resources directory for functionalities extension, performing
 self-rescue, or straight up operational in resources constraint environment
 such as but not limited to OpenWRT embedded router.
