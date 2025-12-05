@@ -17,12 +17,8 @@ entirely.
 
 [![banner](/.internals/trademarks/animated-banner_1200x100.svg)](#)
 
-Based on operating systems engineering specification. Refer to their documents
-for more info. For examples:
+You need to refer to your OS's documentations for device nodes definitions.
+For examples:
 
-* Hard disk can be repesented as:
-  * `/dev/sdX` in `GNU+Linux`; OR
-  * `/dev/adaN` in `FreeBSD`.
-* USB storage device can be represented as:
-  * `/dev/sdX` in `GNU+Linux`; OR
-  * `/dev/daN` in `FreeBSD`.
+* Hard disk and USB storages can be repesented as:
+  * `/dev/sdX`
