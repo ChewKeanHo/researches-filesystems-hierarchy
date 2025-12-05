@@ -2,13 +2,13 @@
 
 [![banner](/.internals/trademarks/animated-banner_1200x100.svg)](#)
 
-This directory houses all readily usable CPU-architecture independent files
+This output directory houses readily usable CPU-architecture independent files
 such as but not limited to `.pdf` documents, `.txt` documents, `.svg` images,
 and etc.
 
 It is a practice to house the configuration files using `trademark` and
-`product` sub-directories organization. This can significantly reduces
-the naming collision for common names.
+`product` sub-directories organization. This can significantly reduces the
+naming collision for common names.
 
 Here are the examples with and without using `trademark` directory:
 

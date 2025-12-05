@@ -2,7 +2,7 @@
 
 [![banner](/.internals/trademarks/animated-banner_1200x100.svg)](#)
 
-This directory houses all readily usable executables programs and
+This output directory houses all readily usable executables programs and
 applications. They are designed to be as readily usable terminal command.
 
 This directory **MUST NOT** have any sub-directory.

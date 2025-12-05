@@ -2,7 +2,7 @@
 
 [![banner](/.internals/trademarks/animated-banner_1200x100.svg)](#)
 
-This directory houses all configuration files.
+This output directory houses all configuration files.
 
 It is a practice to house the configuration files using `trademark` and
 `product` sub-directories organization. This can significantly reduces

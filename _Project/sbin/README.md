@@ -1,9 +1,14 @@
-# `bin`
+# `sbin`
 
 [![banner](/.internals/trademarks/animated-banner_1200x100.svg)](#)
 
-This directory houses all readily usable executables programs and
-applications. They are designed to be as readily usable terminal command.
+This output directory houses readily usable executables programs and
+applications **ONLY FOR system administrators and root account**. They are
+designed to be as readily usable terminal command. Conventional users should not
+be able to access them except calling it from full path.
+
+When a project is built, all the executable outputs including
+Microsoft Windows' `.exe` binary files are placed here.
 
 This directory **MUST NOT** have any sub-directory.
 
@@ -43,9 +48,9 @@ them regardless of OSes.
 For OS-Ready executables, complying the above, it's best to either:
 
 1. symbolic link into your program name (e.g.
-   `$ ln -s bin/myprogram_linux-amd64.elf bin/myprogram`); OR
-2. create a shell script (preferbly polygot script) as `bin/myprogram` that
-   smartly execute the correct program (`bin/myprogram_linux-amd64.elf`).
+   `$ ln -s sbin/myprogram_linux-amd64.elf sbin/myprogram`); OR
+2. create a shell script (preferbly polygot script) as `sbin/myprogram` that
+   smartly execute the correct program (`sbin/myprogram_linux-amd64.elf`).
 
 The strategy depends on how the project is being managed and one knows how
 to create a polygot shell script.

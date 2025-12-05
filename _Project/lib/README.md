@@ -2,7 +2,7 @@
 
 [![banner](/.internals/trademarks/animated-banner_1200x100.svg)](#)
 
-This directory houses all readily importable library files.
+This output directory houses all readily importable library files.
 
 When a project is built, all the libraries' outputs including Microsoft Windows'
 `.dll` binary files are placed here.

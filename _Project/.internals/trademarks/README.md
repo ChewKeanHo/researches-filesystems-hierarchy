@@ -2,9 +2,9 @@
 
 [![banner](/.internals/trademarks/animated-banner_1200x100.svg)](#)
 
-This houses the project (e.g. `git`) trademark graphic files like icons
-and banners. This is for end-users or customers to quickly recognizes
-the project as a product.
+This directory houses the project (e.g. `git`) trademark graphic files like
+icons and banners. This is for end-users or customers to quickly recognizes
+the project as a product visually.
 
 The outer-most layer here is production ready uses files.
 

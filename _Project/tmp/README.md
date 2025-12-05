@@ -10,10 +10,10 @@ Programs and applications should not be dependent on files located in this
 directory as they can be randomly removed by clean up services or human
 interventions. Perform safe querying before use.
 
-It is **ALWAYS ENCOURAGED** to clean up the temporary directory of your
-specific location before use to avoid any transient data corruptions. Whenever
-possible, do clean up after use as the last step or provide a realiable way
-for user to perform the clean up.
+It is **ALWAYS ENCOURAGED** to clean up the temporary directory of your specific
+location before use to avoid any transient data corruptions. Whenever possible,
+do clean up after use as the last step or provide a realiable way for user to
+perform clean up.
 
 It is a practice to house the configuration files using `trademark` and
 `product` sub-directories organization. This can significantly reduces
@@ -45,7 +45,7 @@ tmp/
 
 
 
-## Naming Conventions
+## Temporary Natures
 
 [![banner](/.internals/trademarks/animated-banner_1200x100.svg)](#)
 
