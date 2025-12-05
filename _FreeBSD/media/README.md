@@ -12,9 +12,6 @@ The rationale is rather than queue-and-hold the `/mnt` directory per device,
 `/media` caters for one or more devices. This made `/mnt` a temporary mounting
 directory only for sysadmins and root user to debug mountable transactions.
 
-In some UNIX-like operating systems (OS) like Red Hat or Fedora, this directory
-was replaced as `/var/run/media` directory instead.
-
 You can place files or directory in the media directory here in accordance to
 the designated filesystem ownership and permissions.
 
