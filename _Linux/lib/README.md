@@ -17,16 +17,16 @@ All libraries here are available to all users.
 In a lot of Linux OSes like Oracle's Solaris (first to transform back in 2012)
 Red Hat's Fedora (second to transform back in 2023) an Debian (started back in
 2022), due to `/usr` is always being mounted and hardware are no longer seeing
-performance differences between `/` and `/usr`, this directory is being
-symbolic linked to `/usr/lib` instead; unifying both directories. This reduces
-the separation complexities while simplifying the package managements to target
+performance differences between `/` and `/usr`, this directory is being symbolic
+linked to `/usr/lib` instead; unifying both directories. This reduces the
+separation complexities while simplifying the package managements to target
 `/usr/lib` only.
 
 Generally, in the case of `/lib` being symbolic linked to `/usr/lib`, you
 **SHOULD NOT** place anything here and instead use `/usr/sbin` exclusively.
-Otherwise, in edge and rare cases, you **SHOULD ONLY** place programs that
-are very critical at early booting stage without conflicting with existing
-POSIX compliant programs.
+Otherwise, in edge and rare cases, you **SHOULD ONLY** place programs that are
+very critical at early booting stage without conflicting with existing POSIX
+compliant programs.
 
 
 
