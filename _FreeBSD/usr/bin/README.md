@@ -5,7 +5,7 @@
 This is the base directory for housing operating system's (OS) distributor
 supplied programs and applications to extend its functionalities from
 *Critical & Minimal* stage to *Full Catalogue* stage. This means it can operate
-in `Multi-User` mode in BSD realm or `Full Mode` in Linux realm.
+in `Multi-User` mode.
 
 The goal is to extend the OS' functionalities for distributor level full
 functionalities. At this stage, the OS can operate as per its distributor's
