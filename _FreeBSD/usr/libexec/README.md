@@ -3,21 +3,21 @@
 [![banner](/.internals/trademarks/animated-banner_1200x100.svg)](#)
 
 This is the base directory for housing operating system's (OS) distributor
-supplied non-user, system-only, critical, programs and applications to extend
-its functionalities from *Critical & Minimal* stage to *Full Catalogue* stage.
-This means it can operate in `Multi-Users` mode.
+supplied, non-user, system-only, non-critical, programs and applications of the
+OS to extend its functionalities from *Critical & Minimal* stage to
+*Full Catalogue* stage. This means it can operate in `Multi-Users` mode.
 
-The goal is to extend the OS functionalities upto its distributor's supplied
-level. At this point, the OS should be operable as advertised by its
-distributor.
+The goal is to extend the OS' functionalities for distributor level full
+functionalities. At this stage, the OS can operate as per its distributor's
+engineering specifications.
 
-All programs and applications here are **NOT AVAILABLE** as callable commands
-to any users. Sysadmins (users in `wheel` group) and root account must execute
-them via full pathing manually.
+All programs and applications here are **NOT AVAILABLE** as callable commands to
+any user. Sysadmins (users in `wheel` group) and root account must execute them
+via full filepath manually.
 
-Generally, you **SHOULD ONLY** place OS' distributor supplied programs and
-applications here. Otherwise, for any user-specific system-wide programs and
-applications, use `/usr/local/libexec` instead.
+Generally, you **SHOULD ONLY** place distributor's registered programs here.
+For your own locally build or custom sourced packages, you should place them
+inside `/usr/local/libexec` directory instead.
 
 This directory **MUST NOT** have any sub-directory.
 
@@ -41,8 +41,8 @@ myprogram_windows-arm64.exe
 ...
 ```
 
-File extension is optional but for consistency sake, it's best to include
-them regardless of OSes.
+File extension is optional but for consistency sake, it's best to include them
+regardless of OSes.
 
 Then for common name, it is best to either:
 
