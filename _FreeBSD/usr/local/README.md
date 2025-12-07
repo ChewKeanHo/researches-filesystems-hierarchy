@@ -2,20 +2,30 @@
 
 [![banner](/.internals/trademarks/animated-banner_1200x100.svg)](#)
 
-This is the base directory for housing all user custom supplied non-user,
-system-only, critical, programs; applications; and files to extend its
+This is the base directory for housing operating system's (OS) user supplied,
+system-wide available custom programs, applications and files for extending its
 functionalities from *Full Catalogue* stage to *Complete* stage. This means it
-can operate in `Multi-Users` mode.
+can operate in `Multi-User` mode.
 
-The goal is to extend the OS functionalities upto its complete user's
-system-wide customization level. At this point, the OS should be fully operable
-as configured by the user.
+The goal is to extend the OS' functionalities to its complete form. At this
+stage, the OS can operate as designed by its distributor and customized by the
+user. The sole reason with the split between `/usr` and `/usr/local` is to
+ensure any user **DOES NOT** interfere with your OS' distributor installed
+packages (they are in `/` and `/usr` levels) allowing them to update the OS
+seamlessly and smoothly across time. This is why every setup here is specfically
+only for this host.
 
-Generally, you **SHOULD AND STRONGLY ENCOURAGED** to place your custom supplied
-programs, applications, and files here. The sole reason with the split between
-`/usr` and `/usr/local` is to ensure you **DO NOT INTERFERE** with your OS'
-distributor installed packages (they are in `/usr`) and allows them to smoothly
-update the OS from time-to-time.
+On some Linux UNIX-like OSs notably SystemD and UAPI, this directory is
+**UNAVAILABLE** as they shifted all user customizations entirely into user home
+directory with dedicated software like rootless package manager implementations
+like Flatpak (`$ flatpak --user install`) instead.
+
+All programs and applications here are available to all users.
+
+Generally, you **SHOULD AND STRONGLY ENCOURAGED** to place your distributor's
+unregistered (as in you bring your own custom packages) programs, applications,
+and files here. If you wish to place user-only (only for 1 specific user), you
+should use `/home/[YOUR_USERNAME]/.local` filesystem directory instead.
 
 
 
@@ -25,15 +35,14 @@ update the OS from time-to-time.
 [![banner](/.internals/trademarks/animated-banner_1200x100.svg)](#)
 
 The `/usr/local` directory is one of the foundational directory for completing
-the entire UNIX operating system's functionalities. When `/usr/local` combines
-with the [Common](/Common) FHS, you get a list of basic functional directories
-as such:
+the entire OS' functionalities. When `/usr/local` combines with the
+[Common](/Common) FHS, you get a list of basic functional directories as such:
 
 ```
 /usr/local/bin     - user supplied utilities programs and applications.
 /usr/local/etc     - user supplied configuration files.
-/usr/local/lib     - user supplied libraries used by non-critical programs
-                     and applications.
+/usr/local/lib     - user supplied libraries used by user customized
+                     non-critical programs and applications.
 /usr/local/sbin    - user supplied non-critical system administration
                      programs and applications.
 /usr/local/share   - user supplied architecture independent files.
@@ -46,26 +55,20 @@ provide various system roles:
 
 ```
 /usr/local/include - user supplied include files (e.g. c header files).
-/usr/local/libexec - user supplied system daemons and system utilities executed
-                     by other programs and applications.
 ```
 
+Then, the OS can specify its specific directories such as:
 
-
-
-## Primary Objectives
-
-[![banner](/.internals/trademarks/animated-banner_1200x100.svg)](#)
-
-The primary objective of this layer is to facilitates system-wide user
-customizations for the OS without tempering the critical or the full layers
-of system software. This isolation enables easier packages distribution
-management free from tempering while providing a safe space for users to deal
-with their unpredictable software installations and configurations.
-
-Anything placed here will be available to all users system-wide and specific
-to this operating system. Hence, it has the name `local`.
+```
+FreeBSD
+-------
+/usr/local/libaARCH - user supplied cross CPU architectures library files.
+/usr/local/libexec  - user supplied system daemons and system utilities executed
+                      by other programs and applications.
+/usr/local/www      - user supplied static web content by web servers (e.g.
+                      Nginx).
+```
 
 Feel free to explore all the sub-directories. When it's done. Head over
-to [/home/USERNAME/.local](/UNIX/home/USERNAME/.local) for user-specific
-filesystem layers.
+to [/home/USERNAME/.local](/_FreeBSD/home/USERNAME/.local) for the user-only
+filesystem layer.
