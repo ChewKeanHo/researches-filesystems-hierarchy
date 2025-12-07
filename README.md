@@ -67,6 +67,9 @@ specifications to match the outputs:
 20. UAPI Linux FHS - https://uapi-group.org/specifications/specs/linux_file_system_hierarchy/
 21. Freedesktop SystemD FHS - https://www.freedesktop.org/software/systemd/man/latest/file-hierarchy.html
 22. FreeBSD `hier` Default FHS - https://man.freebsd.org/cgi/man.cgi?hier(7)
+23. FreeBSD Ports Manual - https://man.freebsd.org/cgi/man.cgi?query=ports&sektion=7&apropos=0&manpath=FreeBSD+15.0-RELEASE+and+Ports
+23. FreeBSD Ports Handbook - https://docs.freebsd.org/en/books/handbook/ports/
+24. FreeBSD Porter's Handbook - https://docs.freebsd.org/en/books/porters-handbook/
 
 
 
