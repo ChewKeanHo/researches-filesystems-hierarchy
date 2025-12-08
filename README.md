@@ -70,6 +70,7 @@ specifications to match the outputs:
 23. FreeBSD Ports Manual - https://man.freebsd.org/cgi/man.cgi?query=ports&sektion=7&apropos=0&manpath=FreeBSD+15.0-RELEASE+and+Ports
 23. FreeBSD Ports Handbook - https://docs.freebsd.org/en/books/handbook/ports/
 24. FreeBSD Porter's Handbook - https://docs.freebsd.org/en/books/porters-handbook/
+25. FreeBSD yp Manual - https://man.freebsd.org/cgi/man.cgi?query=yp&manpath=FreeBSD+13.2-STABLE
 
 
 
