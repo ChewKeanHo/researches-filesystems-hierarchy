@@ -5,7 +5,7 @@
 This is the base directory for housing user custom supplied, non-critical,
 system administrators (sysadmins) only programs and applications to extend its
 functionalities from *Full Catalogue* stage to *Complete* stage. This means it
-can operate in `Multi-User` mode in BSD realm or `Full Mode` in Linux realm.
+can operate in `Multi-User` mode.
 
 The goal is to extend the OS' functionalities to its complete form. At this
 stage, the OS can operate as per its distributor's engineering specifications
