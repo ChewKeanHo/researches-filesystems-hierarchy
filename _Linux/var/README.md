@@ -18,9 +18,9 @@ and applications here.
 
 [![banner](/.internals/trademarks/animated-banner_1200x100.svg)](#)
 
-The first sub-directory layer is function oriented (e.g. `log`, `mail`, `lock`,
-`cache`, `tmp`, `crash`, `www`, `spool`, ...). This is defined by the OS'
-engineering specification itself.
+The first sub-directory layer is a list of function oriented (e.g. `log`,
+`mail`, `lock`, `cache`, `tmp`, `crash`, `www`, `spool`, ...) directories. This
+is defined by the OS' engineering specification itself.
 
 Within the function oriented sub directory, it is a practice to house the
 configuration files using `trademark` and `product` sub-directories
