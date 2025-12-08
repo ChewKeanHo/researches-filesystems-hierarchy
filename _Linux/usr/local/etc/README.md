@@ -4,8 +4,7 @@
 
 This is the base directory for housing user custom supplied, non-critical
 configuration files to extend its functionalities from *Full Catalogue* stage to
-*Complete* stage. This means it can operate in `Multi-User` mode in BSD realm or
-`Full Mode` in Linux realm.
+*Complete* stage. This means it can operate in `Full Mode`.
 
 The goal is to extend the OS' functionalities to its complete form. At this
 stage, the OS can operate as per its distributor's engineering specifications
