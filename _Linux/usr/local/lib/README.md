@@ -4,8 +4,7 @@
 
 This is the base directory for housing user custom supplied, non-critical
 libraries files to extend its functionalities from *Full Catalogue* stage to
-*Complete* stage. This means it can operate in `Multi-User` mode in BSD realm or
-`Full Mode` in Linux realm.
+*Complete* stage. This means it can operate in `Full Mode`.
 
 The goal is to extend the OS' functionalities to its complete form. At this
 stage, the OS can operate as per its distributor's engineering specifications
@@ -18,8 +17,8 @@ instead.
 All libraries files here are available to all users.
 
 Generally, when this directory is used, you **SHOULD AND STRONGLY ENCOURAGED**
-to place your distributor's unregistered library files here (e.g. from a custom
-package elsewhere). It will be available to all users system-wide.
+to place your distributor's unregistered libraries files here (e.g. from a
+custom package elsewhere). It will be available to all users system-wide.
 
 
 
