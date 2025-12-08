@@ -1,16 +1,16 @@
-# Linux Filesystem Hierarchy
+#  Linux Filesystem Hierarchy Standard
 
 [![banner](/.internals/trademarks/animated-banner_1200x100.svg)](#)
 
-This is Linux specific Filesystem Hierarchy covering all compatible
-operating systems (OS). This directory is to consolidate all Linux based
-OSes datapoints before performing data abstractions for the common points.
+This is a specific Filesystem Hierarchy Standard (FHS) for Linux-based operating
+system (OS). This directory is to consolidate all Linux based OSes datapoints
+before performing data abstractions for the common points.
 
-This leaves room for innovation across time while maintaining common
-abstracted patterns as a standards. It is a win-win for both situations.
+This leaves room for innovation across time while maintaining common abstracted
+patterns as a standards. It is a win-win for both situations.
 
-Keep in mind that for Linux-based OSes, there are 2 internal
-factions duking out for leading the development and standarizations:
+Keep in mind that for Linux-based OSes, there are 2 internal factions duking out
+for leading the development and standarizations:
 
 1. The SystemD Community
   * https://lwn.net/Articles/1041316/
@@ -63,7 +63,7 @@ Linux-based OS generally go through 4 stages of functionalities extensions:
 [![banner](/.internals/trademarks/animated-banner_1200x100.svg)](#)
 
 The root directory is the very foundational and critical directory
-represented by `/` in the OS. When root combines with [Common](/Common)
+represented by `/` in FreeBSD OS. When root combines with [Common](/Common)
 filesystem hierarchy, you get a list of basic functional directories such as:
 
 ```
@@ -73,10 +73,6 @@ filesystem hierarchy, you get a list of basic functional directories such as:
 /sbin      - OS critical system administration (sysadmins) programs.
 /tmp       - OS temporary work files.
 ```
-
-> [!NOTE]
->
-> Linux DOES NOT USE `libexec` as they are considered as `sbin`.
 
 The root directory also has other system directories that provides
 various system roles:
