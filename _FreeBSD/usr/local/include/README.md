@@ -5,15 +5,11 @@
 This is the base directory for housing user custom supplied, non-critical
 inclusion files (e.g. C header files) to extend its functionalities from
 *Full Catalogue* stage to *Complete* stage. This means it can operate in
-`Multi-User` mode in BSD realm or `Full Mode` in Linux realm.
+`Multi-User Mode`.
 
 The goal is to extend the OS' functionalities to its complete form. At this
 stage, the OS can operate as per its distributor's engineering specifications
 and customized as per user.
-
-In many UNIX-like OSes like SystemD and UAPI, this directory is
-**DEPRECATED AND REMOVED** in favor of using `/home/USERNAME/.local/include`
-instead.
 
 All inclusion files here are available to all users.
 
