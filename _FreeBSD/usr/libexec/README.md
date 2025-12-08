@@ -3,7 +3,7 @@
 [![banner](/.internals/trademarks/animated-banner_1200x100.svg)](#)
 
 This is the base directory for housing operating system's (OS) distributor
-supplied, non-user, system-only, non-critical, programs and applications of the
+supplied, non-critical, non-user system-only programs and applications of the
 OS to extend its functionalities from *Critical & Minimal* stage to
 *Full Catalogue* stage. This means it can operate in `Multi-Users` mode.
 

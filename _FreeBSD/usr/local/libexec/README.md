@@ -2,24 +2,22 @@
 
 [![banner](/.internals/trademarks/animated-banner_1200x100.svg)](#)
 
-This is the base directory for housing user custom supplied non-user,
-system-only, critical, programs and applications to extend its functionalities
+This is the base directory for housing user custom supplied, non-critical,
+non-user system-only programs and applications to extend its functionalities
 from *Full Catalogue* stage to *Complete* stage. This means it can operate in
-`Multi-Users` mode.
+`Multi-User` mode.
 
-The goal is to extend the OS functionalities upto its complete user's
-system-wide customization level. At this point, the OS should be fully operable
-as configured by the user.
+The goal is to extend the OS' functionalities to its complete form. At this
+stage, the OS can operate as per its distributor's engineering specifications
+and customized as per user.
 
-All programs and applications here are **NOT AVAILABLE** as callable commands
-to any users. Sysadmins (users in `wheel` group) and root account must execute
-them via full pathing manually.
+All programs and applications here are **NOT AVAILABLE** as callable commands to
+any user. Sysadmins (users in `wheel` group) and root account must execute them
+via full filepath manually.
 
-Generally, you **SHOULD AND STRONGLY ENCOURAGED** to place your custom supplied
-programs and applications here. The sole reason with the split between
-`/usr/libexec` and `/usr/local/libexec` is to ensure you **DO NOT** interfere
-with your OS' distributor installed packages (they are in `/usr/libexec`) and
-allows them to smoothly update the OS from time-to-time.
+Generally, you **SHOULD AND STRONGLY ENCOURAGED** to place your distributor's
+unregistered programs here (e.g. from a custom package elsewhere). It will be
+available to all users system-wide.
 
 This directory **MUST NOT** have any sub-directory.
 
