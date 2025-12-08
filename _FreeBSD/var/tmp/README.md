@@ -6,10 +6,6 @@ This directory houses all operating system's temporary files and directory.
 Unlike `/tmp` base directory, this temporary directory **get persisted** across
 reboot (without deletion) enabling post booting forensic analytics use.
 
-On some UNIX-like OSes like Red Hat Linux and Fedora, this directory is a direct
-replacement of `/tmp` directory and symlinked for `/usr/tmp` temporary
-directory.
-
 Programs **SHOULD NOT** assume any file and directory here and **SHOULD** always
 practice safe-querying before use.
 
