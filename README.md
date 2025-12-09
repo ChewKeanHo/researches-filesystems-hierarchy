@@ -71,6 +71,7 @@ specifications to match the outputs:
 23. FreeBSD Ports Handbook - https://docs.freebsd.org/en/books/handbook/ports/
 24. FreeBSD Porter's Handbook - https://docs.freebsd.org/en/books/porters-handbook/
 25. FreeBSD yp Manual - https://man.freebsd.org/cgi/man.cgi?query=yp&manpath=FreeBSD+13.2-STABLE
+26. FreeBSD Bind9 Manual - https://man.freebsd.org/cgi/man.cgi?query=named&sektion=8&manpath=OpenBSD+5.1
 
 
 
