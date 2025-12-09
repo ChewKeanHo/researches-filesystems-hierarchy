@@ -11,7 +11,7 @@ url: "https://doi.org/[DOI_ID_HERE]"
 contact:
   - affiliation: "(Holloway) Chew, Kean Ho"
     email: "hello@chewkeanho.com"
-    website: "https://your-product.website.here"
+    website: "https://www.chewkeanho.com"
 abstract: |-
   Having trouble working with filesystems hierarchy layouts especially those
   that has standardized regulations like UNIX and Windows? Are you looking
@@ -35,6 +35,12 @@ abstract: |-
      something clean and reliable to refer (not a rule to enforce) when
      designing a project directory layout.
 
+  This dataset is a 100% deterministic with futuristic directive concequencies.
+  It is **100% human-made. Direct artificial intelligences (A.I) contributions
+  (e.g. vibe coding) IS STRICTLY PROHIBITED**. Only use A.I. for
+  non-concequential tasks like scouting for data source materials across the
+  broken search engines.
+
   **REMEMBER: THESE ARE DESIGN REFERENCES; NOT RELIGIOUS RULES**. In other
   words, they are **opinions**.
 
@@ -43,6 +49,39 @@ abstract: |-
   adhere opinions.
 
   **Fanatism destroys**. Please act responsbily and sensibly.
+
+  To use this dataset, first setup the markdown rendering `git` repository
+  (e.g. its GitHub mirror:
+  https://github.com/ChewKeanHo/researches-filesystems-hierarchy). There you can
+  read the descriptions of each directory. For dataset, you need an UNIX program
+  called `tree`. Then execute the command:
+
+  ```
+  $ tree -a -d path/to/TARGET/
+  ```
+
+  The final outputs are consolidated into:
+
+  * **Common Directory Structure** - the [/Common](/Common). This is used for
+    all common functioning directories that can combine with other directories
+    for inter-compatible interpretations.
+  * **User Home Directory Structure** - the [/User](/User). This is used to
+    setup an user's home directory especially for graphical user interface. It
+    can combine with other directories for inter-compatible interpretations.
+  * **UNIX Filesystems Hierarchy** - the [/UNIX](/UNIX). The abstracted
+    compatible filesystems across ALL UNIX OSes including BSD and Linux-based.
+
+  Any specific filesystem hierarchies are prefixed with an underscore (`_`).
+  These are dedicated directories for consolidating their respective specific
+  designs prior to `/UNIX` abstractions. Among them are:
+
+  * **FreeBSD Filesystems Hierarchy** - the [/_FreeBSD](/_FreeBSD) UNIX-like OS.
+  * **Linux Filesystems Hierarchy** - the [/_Linux](/_Linux)-based UNIX-like OS.
+    Note that this consolidates all kinds of Linux-based OSes including but not
+    limited to SystemD, FreeDesktop.org, Red Hat, Debian, Devuan, Void Linux,
+    Fedora, etc.
+  * **Project Directory Structures** - the [/_Project](/_Project) commonly used
+    for small modular project repository (e.g. `git` project repository).
 message: |-
   Please cite and reference this repository accordingly.
 authors:
