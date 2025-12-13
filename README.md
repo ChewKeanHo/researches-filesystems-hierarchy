@@ -39,7 +39,7 @@ broken search engines.
 > back to this project. **IN NO WAY** this project is encourages anyone to
 > adhere opinions.
 >
-> **Fanatism destroys**. Please act responsbily and sensibly.
+> **Fanaticism destroys**. Please act responsbily and sensibly.
 
 To use this dataset, first setup the markdown rendering `git` repository
 (e.g. its GitHub mirror:
